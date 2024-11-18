@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.testimonial-container {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 0.1px solid #ccc;
+  padding-bottom: 25px;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+h1 span {
+  color: #ff014f;
+}
+
+.testimonial-card {
+  background-color: #1f2125;
+  color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.03), 0 8px 20px rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Initial position for slide effect */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.testimonial-card.fade-in {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Slide up to original position */
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.testimonial-card h3 {
+  color: #ff014f;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.designation {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-card p {
+    font-size: 0.95rem;
+  }
+
+  .testimonial-card h3 {
+    font-size: 1rem;
+  }
+}
+
+/* General Button Styles */
+.custom-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.swiper-button {
+  background-color: #ff014f;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.custom-prev {
+  transform: rotate(0);
+}
+
+.custom-next {
+  transform: rotate(0);
+}
+
+.swiper-button:active {
+  transform: scale(1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .swiper-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+.testi-img {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Set the desired height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the dimensions without distortion */
+  margin-right: 15px; /* Add spacing between the image and text */
+}
