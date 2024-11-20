@@ -59,6 +59,7 @@ const Contact = () => {
 
         {/* Right Section */}
         <form
+          netlify
           className="contact-form"
           data-aos="flip-left"
           data-aos-duration="1000"
