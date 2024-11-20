@@ -32,7 +32,7 @@ const Contact = () => {
           <p className="contact-detail">
             Email:{" "}
             <a href="mailto:zainulhassa5151@gmail.com" className="email-link">
-              zainulhassa5151@gmail.com
+              zainulhassan5151@gmail.com
             </a>
           </p>
           <div className="social-icons">
@@ -58,7 +58,11 @@ const Contact = () => {
         </div>
 
         {/* Right Section */}
-        <form className="contact-form" data-aos="flip-left" data-aos-duration = "1000" >
+        <form
+          className="contact-form"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+        >
           <div className="form-row">
             <input type="text" placeholder="Your Name" className="form-input" />
             <input

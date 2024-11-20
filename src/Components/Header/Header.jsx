@@ -122,7 +122,7 @@ const Hero = () => {
 
       <div className="skills-container">
         <div className="section">
-          <h3>Find Me In</h3>
+          <h3>Find Me on</h3>
           <div className="icons">
             <div className={`icon ${isInView ? "show" : ""}`}>
               <a
@@ -145,7 +145,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="section">
-          <h3>Best Skill On</h3>
+          <h3>Skills</h3>
           <div className="icons">
             <div className={`icon ${isInView ? "show" : ""}`}>
               <FaHtml5 style={{ color: "#E34F26" }} />
